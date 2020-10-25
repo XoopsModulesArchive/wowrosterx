@@ -1,0 +1,82 @@
+/* wrx_install.txt 2007-01-01 17:13:12
+   WoW Roster X - WoW Roster for Xoops - A XOOPS CMS Module
+   Copyright (c) 2006 Mike DeShane, US
+   URL:     www.pkcomp.net
+   Contact: mdeshane@pkcomp.net
+ 	
+   XOOPS
+   Copyright (c) 2000 XOOPS.org
+   URL:     http://www.xoops.org/
+    
+   This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+    
+ /**************************************	
+ *
+ * WoW Roster X - WoW Roster for Xoops
+ * 
+ * @author Mike DeShane (mdeshane@pkcomp.net)
+ * @copyright 2006 Mike DeShane, US
+ * @package WRX 1.25 (RC1)
+ * @subpackage Installation Text
+ * 
+ ***************************************/
+ 
+ Please read the roster_install.txt before installing or using the WRX Module!!!
+ 
+ 1. Copy the "wowrosterx" directory to your Xoops module directory. 
+ 	** Make sure to download the image pack if you did not download "wrx_125_full.zip" **
+ 
+ 2. Go to your Xoops administration page and install the module using the install icon.
+ 
+ 3. After it has successfully installed the database tables, and configs, click on the Admin icon on the left.
+ 	** This is important that you run the configuration, as it not only lets you 
+	   configure the guild but sets your directory paths to the Roster Root
+	   
+	   Also if it gives you an error about RosterLogin() just refresh the page two or three times **
+	   
+ 4. Set your GuildName and ServerName in the Guild Info config and save.
+ 
+ 5. After setting a correct GuildName and ServerName, go to the Upload Profile/Profile Updater and upload your 
+ 	CharacterProfiler.lua and use the password "xoops" to update the Guild Info.
+	
+ 6. Your Roster should now be all setup! Feel free to change the Update password on the right side of the Config. 
+ 	Also any non-admin user will not be able to see the roster configuration
+	
+
+Additional Info:
+
+	* Blocks are not available in this version, however everything is set in case someone wants to play with them and make them work. 
+	Currently the block functions and show/edit need to be added in "blocks/block_wrx_motd.php" and "blocks/block_wrx_realm.php"
+
+	* Add-on database tables are NOT deleted with the other module tables, I am still looking for a solution to this.
+
+	* Some Add-ons may not work properly, ie SigGen :(
+	
+	* Still looking for a better solution on the user display config, to show each user their Character Page Config. Currently only
+	administrators can view any/all configuration settings. Other users will only be able to open the RosterDiag and Documentaion
+	from the Roster Configuration.
+	
+	* Need to know how compatible this is! Tested and working on New Xoops 2.0.16 Install running Apache/2.2.3 (Win32) and 
+	MySQL 5.0.27-community-nt with PHP 5.2.0
+
+	
+Enjoy this module and help make it better!
+
+
+WoW Roster X Project at Xoops.org
+http://dev.xoops.org/modules/xfmod/project/?wrx
+
+Pretty Kitty Computers
+http://www.pkcomp.net
